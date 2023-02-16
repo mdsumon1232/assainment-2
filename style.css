@@ -37,7 +37,7 @@ nav {
 }
 
 .logo h1 {
-    font-size: 2vw;
+    font-size: 3rem;
     color: var(--header-color);
 }
 
@@ -120,8 +120,12 @@ button {
     }
 
     .logo {
-        padding: 0 15px;
-        width: 150px;
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
     }
 
     nav ul {
@@ -164,6 +168,7 @@ button {
 main {
     max-width: 1440px;
     margin: 0 auto;
+
 }
 
 /* features */
@@ -173,6 +178,7 @@ main {
     align-items: center;
     margin-top: 85px;
     margin-bottom: 130px;
+    
 }
 
 .images {
@@ -246,7 +252,8 @@ main {
 }
 
 .description {
-    width: 586px;
+    max-width: 586px;
+    width: 100%;
     margin-left: 30px;
 }
 
@@ -272,6 +279,7 @@ main {
 .item {
     padding: 30px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .item h4 {
@@ -286,6 +294,7 @@ main {
     font-size: 1rem;
     color: var(--content-color);
     line-height: 26px;
+
 }
 
 .blog-img {
@@ -314,7 +323,8 @@ main {
     border-radius: 10px;
     transition: box-shadow 0.5s;
 }
-.experience:hover{
+
+.experience:hover {
     box-shadow: 2px 2px 10px 4px var(--content-color);
 }
 
@@ -336,8 +346,18 @@ main {
         flex-direction: column;
     }
 
+    .description {
+        margin-left: 5px;
+    }
+
+    .item {
+        padding: 10px 5px;
+
+    }
+
     .blog-img {
         width: 99%;
+        margin-left: 0px;
     }
 
     blog-img img {
@@ -373,7 +393,8 @@ main {
 }
 
 .activities {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -392,7 +413,8 @@ main {
     align-items: center;
     transition: box-shadow 0.5s;
 }
-.activity:hover{
+
+.activity:hover {
     border-left: 1px solid var(--content-color);
     border-right: 1px solid var(--content-color);
     box-shadow: 1px 1px 10px 5px var(--btn-bg-color);
@@ -421,7 +443,9 @@ main {
     .fact {
         position: relative;
         top: 1000px;
-        margin-left: 20px;
+    }
+    .fact h1 ,p{
+        padding: 0 10px;
     }
 
     .activities {
@@ -429,24 +453,25 @@ main {
     }
 
     .activity {
-        margin-left: 250px;
+        margin: 0 auto;
     }
 }
 
 /* Sponspors */
-.Sponspors {
+ .Sponspors {
+    max-width: 1440px;
     width: 100%;
-    height: auto;
+    margin: 0 auto;
     margin-top: 180px;
     text-align: center;
-}
+} 
 
-.Sponspors h1 {
+ .Sponspors h1 {
     font-size: 45px;
     color: var(--header-color);
     font-weight: 700;
-    padding: 20px;
-}
+    
+} 
 
 .Sponspors p {
     font-size: 1rem;
@@ -455,37 +480,46 @@ main {
     margin-bottom: 50px;
     margin-top: 20px;
 
-}
+} 
 
-.sponspor {
-    width: 100%;
+ .sponspor {
+    width:98%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 155px;
+    gap: 10px;
+}  
+.sponspor img{
+    width: 165px;
+    height: 50px;
 }
 
 /* responsive */
 /* small device */
-@media screen and (max-width:767px) {
+ @media screen and (max-width:767px) {
     .Sponspors {
         margin-top: 1050px;
     }
 
     .sponspor {
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 300px;
+        row-gap:20px ;
+       
 
     }
-}
+    .sponspor img{
+        margin: 0 auto;
+    }
+}  
 
 /* main */
 /* footer */
-footer {
+ footer {
+    max-width: 1440px;
     width: 100%;
     height: 100px;
     background-color: #FFF4E7;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,4 +528,4 @@ footer {
 footer p {
     font-size: 1rem;
     color: var(--content-color);
-}
+} 
